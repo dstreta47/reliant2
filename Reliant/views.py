@@ -3,7 +3,7 @@ Routes and views for the flask application.
 """
 
 from datetime import datetime
-from flask import render_template
+from flask import render_template, url_for, request, Flask
 from Reliant import app
 
 @app.route('/')
@@ -44,3 +44,4 @@ def artworks():
         year=datetime.now().year,
         message='Your application description page.'
     )
+
